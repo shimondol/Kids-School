@@ -29,8 +29,9 @@
   .secoundary-color{
     color: #5D58EF;
   }
-  .school-header{
-    margin: 0 140px;
+  .school-header,
+  main{
+    margin: 0 5%;
   }
   .primary-btn{
     color: white;
@@ -59,6 +60,10 @@
     font-weight: 700;
     margin-left: 10px;
   }
+  .menu-toggle {  
+    display: none;
+    font-size: 50px; 
+}  
   .nav-manu>ul{
     display: flex;
     gap: 32px;
@@ -95,6 +100,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top:50px ;
   }
   .card-title{
     text-align: center;
@@ -112,7 +118,7 @@
     font-weight: 700;
   }
   .years-cards{
-    padding: 140px 120px;
+    margin-top: 130px;
     background-image: url('assets/bg.png');
     padding-bottom: 60px;
   }
@@ -288,6 +294,7 @@
   margin: 60px ;
 }
 .footer-content{
+  max-width: 1440px;
   background-color: #01ACFD;
   display: flex;
   justify-content: space-evenly;
@@ -329,3 +336,48 @@
 .about li{
   margin-bottom: 20px;
 }
+
+/* Responsive for mobile */
+@media (max-width: 576px) {  
+  .nav-manu {  
+      display: none; 
+  }  
+  .menu-toggle {  
+      display: block;
+      cursor: pointer  
+  }  
+  .nav-batton,
+  .school-nav .nav-title,
+  .story-btn,
+  .story-1,
+  .arrow-symble{
+    display: none;
+  }
+  .header-main{
+    flex-direction: column-reverse;
+  }
+  .empower-student{
+    text-align: center;
+  }
+  .header-title{
+    font-size: 2.5rem;
+    line-height: 45px;
+  }
+  .card-title{
+    font-size: 1.6rem;
+  }
+  .cards,
+  .footer-content{
+    flex-direction: column;
+  }
+  .about,
+  .link{
+    margin-top: -240px;
+  }
+  .stories-title h1{
+    font-size: 1.6rem;
+  }
+  .footer-content{
+    align-items: center;
+  }
+} 
