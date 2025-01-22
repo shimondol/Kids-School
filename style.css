@@ -29,9 +29,12 @@
   .secoundary-color{
     color: #5D58EF;
   }
-  .school-header,
-  main{
+  .school-header{
     margin: 0 5%;
+  }
+  .cards{
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .primary-btn{
     color: white;
@@ -121,6 +124,7 @@
     margin-top: 130px;
     background-image: url('assets/bg.png');
     padding-bottom: 60px;
+    width: 100%;
   }
   .child-card{
     border: 0.94px solid rgb(222, 245, 255);
@@ -181,15 +185,18 @@
 }  
 .stories img{
   border-radius: 16px 16px 0px 0px;
+  width: 100%;
 }
 .stories-card{
   display: flex;
   justify-content: center;
   gap: 20px;
+  width: 100%;
 }
 .story-1{
-  width: 540.27px;
-  height: 630.52px;
+  position: relative;
+  width: 650px;
+  height: 750px;
   border-radius:16px;
 }
 .story-2{
@@ -215,15 +222,15 @@
 }
 
 .story-photo{
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  width: 540.27px;
-  height: 630.52px;
+  width: 700px;
+  height: 750px;
 }
 .stories{
-  /* max-width: 1440px; */
-  padding: 60px 140px;
+  padding: 60px 5%;
   background: url('assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
 .stories-title,
@@ -249,40 +256,40 @@
 
 .date-1 {  
   position: absolute; 
-  top: 300px;  
+  top: 365px;  
   left: 100px; 
   background-color: rgb(60, 216, 232);   
-  padding: 10px 15px;   
+  padding: 15px 35px;   
   border-radius: 50px; 
 }
 .date-2 {  
   position: absolute; 
-  top: 140px;  
+  top: 170px;  
   left: 45px; 
   background-color:  rgb(149, 178, 38);   
-  padding: 8px 15px;   
+  padding: 10px 16px;   
   border-radius: 50px; 
 }
 .date-3{  
   position: absolute; 
-  top: 140px;  
-  left: 350px; 
+  top: 170px;  
+  left: 400px; 
   background-color: rgb(93, 88, 240);   
-  padding: 8px 15px;   
+  padding: 10px 16px;   
   border-radius: 50px; 
 }
 .date-4{  
   position: absolute; 
-  top: 470px;  
+  top: 560px;  
   left: 33px; 
   background-color:  rgb(149, 178, 38);   
-  padding: 8px 10px;   
+  padding: 10px 16px;   
   border-radius: 50px; 
 }
 .date-5{  
   position: absolute; 
-  top: 470px;  
-  left: 355px; 
+  top: 560px;  
+  left: 400px; 
   background-color:  rgb(149, 178, 38);   
   padding: 8px 20px;   
   border-radius: 50px; 
@@ -294,7 +301,6 @@
   margin: 60px ;
 }
 .footer-content{
-  max-width: 1440px;
   background-color: #01ACFD;
   display: flex;
   justify-content: space-evenly;
@@ -356,6 +362,9 @@
   .header-main{
     flex-direction: column-reverse;
   }
+  .student-img img{
+    width: 100%;
+  }
   .empower-student{
     text-align: center;
   }
@@ -373,6 +382,25 @@
   .about,
   .link{
     margin-top: -240px;
+  }
+  .date-2 {  
+    top: 110px;  
+    left: 45px;  
+  }
+  .date-3{  
+    top: 110px;  
+    left: 300px; 
+  }
+  .date-4{  
+    top: 416px;  
+    left: 33px; 
+  }
+  .date-5{   
+    top: 416px;  
+    left: 300px; 
+  }
+  .story-photo{
+    height: 600px;
   }
   .stories-title h1{
     font-size: 1.6rem;
