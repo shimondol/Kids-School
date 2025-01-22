@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .raleway-font{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* Shared Styles */
+  body{
+    margin: auto 0px;
+  }
+  .orange-color{
+    color: #FEA301;
+  }
+  .sky-blue{
+    color: #01ACFD;
+  }
+  .light-blue{
+    color: #05D4DF;
+  }
+  .secoundary-color{
+    color: #5D58EF;
+  }
+  .school-header{
+    margin: 0 140px;
+  }
+  .primary-btn{
+    color: white;
+    background-color: black;
+    padding: 10px 40px;
+    border-radius: 12px;
+    border: none;
+  }
+  /* School header */
+ 
+  .school-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-icon-title{
+    display: flex;
+    align-items: center;
+  }
+  .school-nav .nav-icon{
+    width: 3.9rem;
+    height: 3.9rem;
+  }
+  .school-nav .nav-title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  .nav-manu>ul{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    list-style: none;
+  }
+  .nav-manu>ul a{
+    text-decoration: none;
+  }
+  .nav-manu .manu{
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .nav-btn{
+    background-color:#FEA301 ;
+    color: #ffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 50px;
+    border-radius: 12px;
+    border: none;
+  }
+  .header-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+    line-height: 60px;
+  }
+  .header-description{
+    font-size: 1.2;
+  }
+
+  .header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-title{
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .cards{
+    display: flex;
+    gap: 20px;
+  }
+  .child-card h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .years-cards{
+    padding: 140px 120px;
+    background-image: url('assets/bg.png');
+    padding-bottom: 60px;
+  }
+  .child-card{
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .child-card img{
+    width: 120px;
+    height: 120px;
+  }
+  .child-card p{
+    color: #808080;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+  }
+  .child-card a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .light-orange{
+    color: #F0AA00;
+  }
+  .secound-card-gradient{
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  }
+  .third-card-gradient{
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  }
+  .arrow-symble {  
+    display: flex;  
+    justify-content: center;  
+    width: 100px;  
+    margin: 0 auto; 
+    margin-top: 100px;
+    gap: 10px;
+}  
+.arrow{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgb(254, 163, 1);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fas {  
+    font-size: 24px; 
+    cursor: pointer;
+    color: white;     
+}  
+.stories img{
+  border-radius: 16px 16px 0px 0px;
+}
+.stories-card{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.story-1{
+  width: 540.27px;
+  height: 630.52px;
+  border-radius:16px;
+}
+.story-2{
+  border-radius: 16px;
+}
+.first-story{
+  padding: 34px 68px;
+}
+.first-story h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.secound-story{
+  padding: 0px 35px;
+}
+.story-1 p{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666666;
+}
+.story-color{
+  background-color: #ffff;
+}
+
+.story-photo{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 540.27px;
+  height: 630.52px;
+}
+.stories{
+  /* max-width: 1440px; */
+  padding: 60px 140px;
+  background: url('assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+.stories-title,
+.story-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.stories-title h1{
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.story-photo h4{
+  font-size: 1rem;
+  font-weight: 700;
+}
+.stories-card ,
+.story-photo{  
+  position: relative;  
+}  
+
+.date-1 {  
+  position: absolute; 
+  top: 300px;  
+  left: 100px; 
+  background-color: rgb(60, 216, 232);   
+  padding: 10px 15px;   
+  border-radius: 50px; 
+}
+.date-2 {  
+  position: absolute; 
+  top: 140px;  
+  left: 45px; 
+  background-color:  rgb(149, 178, 38);   
+  padding: 8px 15px;   
+  border-radius: 50px; 
+}
+.date-3{  
+  position: absolute; 
+  top: 140px;  
+  left: 350px; 
+  background-color: rgb(93, 88, 240);   
+  padding: 8px 15px;   
+  border-radius: 50px; 
+}
+.date-4{  
+  position: absolute; 
+  top: 470px;  
+  left: 33px; 
+  background-color:  rgb(149, 178, 38);   
+  padding: 8px 10px;   
+  border-radius: 50px; 
+}
+.date-5{  
+  position: absolute; 
+  top: 470px;  
+  left: 355px; 
+  background-color:  rgb(149, 178, 38);   
+  padding: 8px 20px;   
+  border-radius: 50px; 
+}
+.story-date p{
+  color: white;
+}
+.story-btn{
+  margin: 60px ;
+}
+.footer-content{
+  background-color: #01ACFD;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-text,
+.about,
+.link{
+  padding-top: 140px;
+  padding-bottom: 140px;
+  color: white;
+}
+.footer-image-title{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer-image-title img{
+  width: 80px;
+  height: 80px;
+}
+.footer-description p{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.about-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.about ul{
+  list-style: none;
+  margin-left: -40px;
+}
+.about a{
+  text-decoration: none;
+  color: white;
+}
+.about li{
+  margin-bottom: 20px;
+}
