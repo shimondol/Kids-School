@@ -44,7 +44,31 @@
     border: none;
   }
   /* School header */
- 
+  .marquee {  
+    overflow: hidden;  
+    white-space: nowrap;  
+    box-sizing: border-box;  
+    width: 100%; /* Adjust width as needed */  
+  }  
+
+  .marquee span {  
+    display: none;
+    font-size: 1.5rem;
+    color: #01ACFD;
+    font-weight: 700;
+    margin-top: 10px;  
+    padding-left: 100%; /* Start position */  
+    animation: marquee 20s ease-in-out infinite; /* Adjust time as needed */  
+  }  
+
+  @keyframes marquee {  
+    0% {  
+        transform: translate(0%);  
+    }  
+    100% {  
+        transform: translate(-100%);  
+    }  
+  }
   .school-nav{
     display: flex;
     justify-content: space-between;
@@ -256,40 +280,35 @@
 
 .date-1 {  
   position: absolute; 
-  top: 365px;  
-  left: 100px; 
+  transform: translate(40%, -100%);
   background-color: rgb(60, 216, 232);   
   padding: 15px 35px;   
   border-radius: 50px; 
 }
 .date-2 {  
   position: absolute; 
-  top: 170px;  
-  left: 45px; 
+  transform: translate(40%, -100%);
   background-color:  rgb(149, 178, 38);   
   padding: 10px 16px;   
   border-radius: 50px; 
 }
 .date-3{  
   position: absolute; 
-  top: 170px;  
-  left: 400px; 
+  transform: translate(40%, -100%);
   background-color: rgb(93, 88, 240);   
   padding: 10px 16px;   
   border-radius: 50px; 
 }
 .date-4{  
   position: absolute; 
-  top: 560px;  
-  left: 33px; 
+  transform: translate(40%, -100%); 
   background-color:  rgb(149, 178, 38);   
   padding: 10px 16px;   
   border-radius: 50px; 
 }
 .date-5{  
   position: absolute; 
-  top: 560px;  
-  left: 400px; 
+  transform: translate(40%, -100%);
   background-color:  rgb(149, 178, 38);   
   padding: 8px 20px;   
   border-radius: 50px; 
@@ -303,15 +322,16 @@
 .footer-content{
   background-color: #01ACFD;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding-left: 5%;
 }
 .footer-text,
 .about,
 .link{
-  padding-top: 140px;
-  padding-bottom: 140px;
   color: white;
+  width: 100%;
 }
+
 .footer-image-title{
   display: flex;
   align-items: center;
@@ -352,6 +372,9 @@
       display: block;
       cursor: pointer  
   }  
+  .marquee span {  
+    display: inline-block;  
+  }  
   .nav-batton,
   .school-nav .nav-title,
   .story-btn,
@@ -379,26 +402,14 @@
   .footer-content{
     flex-direction: column;
   }
-  .about,
-  .link{
-    margin-top: -240px;
+
+  .date-2,
+  .date-3,
+  .date-4,
+  .date-5 {  
+    transform: translate(2%, -100%); 
   }
-  .date-2 {  
-    top: 110px;  
-    left: 45px;  
-  }
-  .date-3{  
-    top: 110px;  
-    left: 300px; 
-  }
-  .date-4{  
-    top: 416px;  
-    left: 33px; 
-  }
-  .date-5{   
-    top: 416px;  
-    left: 300px; 
-  }
+ 
   .story-photo{
     height: 600px;
   }
