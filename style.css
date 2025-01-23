@@ -50,7 +50,10 @@
     box-sizing: border-box;  
     width: 100%; /* Adjust width as needed */  
   }  
-
+  hr{
+    color: #FEA301;
+    display: none;
+  }
   .marquee span {  
     display: none;
     font-size: 1.5rem;
@@ -418,5 +421,10 @@
   }
   .footer-content{
     align-items: center;
+  }
+  hr{
+    display: block;
+    width: 200%;
+    margin-left: -20px;
   }
 } 
